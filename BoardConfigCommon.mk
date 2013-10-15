@@ -39,8 +39,8 @@ TARGET_KERNEL_SOURCE := kernel/htc/m7
 
 # Custom flags
 ARCH_ARM_HAVE_TLS_REGISTER := true
-TARGET_GLOBAL_CFLAGS += -fmerge-all-constants -funsafe-math-optimizations -ftree-vectorize -mfloat-abi=softfp -mfpu=neon-vfpv4
-TARGET_GLOBAL_CPPFLAGS += -fmerge-all-constants -funsafe-math-optimizations -ftree-vectorize -mfloat-abi=softfp -mfpu=neon-vfpv4
+TARGET_GLOBAL_CFLAGS += -fmerge-all-constants -funsafe-math-optimizations -ftree-vectorize -mfloat-abi=softfp 
+TARGET_GLOBAL_CPPFLAGS += -fmerge-all-constants -funsafe-math-optimizations -ftree-vectorize -mfloat-abi=softfp 
 TARGET_EXTRA_CFLAGS += $(call cc-option, -pipe)
 
 # Flags
