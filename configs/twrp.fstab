@@ -1,0 +1,7 @@
+/boot			emmc		/dev/block/mmcblk0p33
+/recovery		emmc		/dev/block/mmcblk0p34
+/system			ext4		/dev/block/mmcblk0p35
+/cache			ext4		/dev/block/mmcblk0p36
+/data			ext4		/dev/block/mmcblk0p37
+/storage/usbdisk			/devices/platform/msm_hsusb_host/usb
+

@@ -39,6 +39,14 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/init.post_boot.sh:system/etc/init.post_boot.sh
 
 # Recovery
+ifeq ($(TARGET_DEVICE),m7spr)
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/twrp.sprint.fstab:recovery/root/etc/twrp.fstab
+else
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/twrp.fstab:recovery/root/etc/twrp.fstab
+endif
+
 PRODUCT_PACKAGES += \
     lpm.rc \
     charger \
