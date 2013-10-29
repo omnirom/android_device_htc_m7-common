@@ -23,4 +23,5 @@
     <bool name="noFaceDetectOnRearCamera">true</bool>
     <!-- HTC Camcorder Mode -->
     <bool name="needsHTCCamMode">true</bool>
+    <bool name="enableVideoHDR">true</bool>
 </resources>
