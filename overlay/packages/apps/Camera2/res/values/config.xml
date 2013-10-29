@@ -17,10 +17,6 @@
 <!-- Camera app resources that may need to be customized
      for different hardware or product builds. -->
 <resources>
-    <!-- Disable face detection on the front camera -->
-    <bool name="noFaceDetectOnFrontCamera">true</bool>
-    <!-- Disable face detection on the rear camera -->
-    <bool name="noFaceDetectOnRearCamera">true</bool>
     <!-- HTC Camcorder Mode -->
     <bool name="needsHTCCamMode">true</bool>
 </resources>
