@@ -170,13 +170,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.sys.usb.config=mtp,adb
 
-# HTC IR Blaster resources
-PRODUCT_PACKAGES += \
-    CIRModule \
-    htcirlibs \
-    libhtcirinterface_jni \
-    init.rc
-
 # Common build properties
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.nfc.fw_download=true \
