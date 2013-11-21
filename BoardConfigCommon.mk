@@ -34,7 +34,7 @@ BOARD_KERNEL_BASE := 0x80600000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=qcom user_debug=31 androidboot.selinux=permissive
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01600000
-TARGET_KERNEL_CONFIG := aicp_m7_defconfig
+TARGET_KERNEL_CONFIG := default_m7_defconfig
 TARGET_KERNEL_SOURCE := kernel/htc/m7
 
 # Custom flags
