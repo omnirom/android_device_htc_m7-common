@@ -65,6 +65,7 @@ BOARD_BLUETOOTH_USES_HCIATTACH_PROPERTY := false
 BOARD_NEEDS_MEMORYHEAPPMEM := true
 COMMON_GLOBAL_CFLAGS += -DDISABLE_HW_ID_MATCH_CHECK
 COMMON_GLOBAL_CFLAGS += -DHTC_CAMERA_HARDWARE
+USE_DEVICE_SPECIFIC_CAMERA := true
 
 # Graphics
 TARGET_DISPLAY_INSECURE_MM_HEAP := true
@@ -94,6 +95,15 @@ WIFI_DRIVER_FW_PATH_P2P          := "/system/etc/firmware/fw_bcm4335_p2p_b0.bin"
 WIFI_DRIVER_MODULE_ARG           := "firmware_path=/system/etc/firmware/fw_bcm4335_b0.bin nvram_path=/system/etc/calibration"
 WIFI_DRIVER_MODULE_AP_ARG        := "firmware_path=/system/etc/firmware/fw_bcm4335_apsta_b0.bin nvram_path=/system/etc/calibration"
 WIFI_BAND                        := 802_11_ABG
+
+# SELinux
+BOARD_SEPOLICY_DIRS := \
+    device/htc/m7-common/sepolicy
+
+BOARD_SEPOLICY_UNION := \
+    app.te \
+    device.te \
+    file_contexts
 
 # Filesystem
 BOARD_BOOTIMAGE_PARTITION_SIZE := 16777216
