@@ -16,6 +16,24 @@
       "revId": "2ed2063743cd03f1276fa01161d4923d7569a469",
       "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8b8ed5af_a422e6a1",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 1000134
+      },
+      "writtenOn": "2013-11-26T16:03:00Z",
+      "side": 1,
+      "message": ":) patchset incoming",
+      "parentUuid": "8b8ed5af_c16a84e9",
+      "revId": "2ed2063743cd03f1276fa01161d4923d7569a469",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
     }
   ]
 }
