@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8b8ed5af_c16a84e9",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 1000026
+      },
+      "writtenOn": "2013-11-26T15:58:13Z",
+      "side": 1,
+      "message": "Dont remove \u003cbool name\u003d\"config_intrusiveNotificationLed\"\u003etrue\u003c/bool\u003e :)",
+      "revId": "2ed2063743cd03f1276fa01161d4923d7569a469",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
+    }
+  ]
+}
