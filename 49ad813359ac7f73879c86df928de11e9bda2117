@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8b8ed5af_99a70c4d",
+        "filename": "overlay/packages/apps/Gallery2/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1000026
+      },
+      "writtenOn": "2013-12-01T11:38:50Z",
+      "side": 1,
+      "message": "not supported",
+      "revId": "49ad813359ac7f73879c86df928de11e9bda2117",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8b8ed5af_b9a4c848",
+        "filename": "overlay/packages/apps/Gallery2/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1000026
+      },
+      "writtenOn": "2013-12-01T11:38:50Z",
+      "side": 1,
+      "message": "not supported",
+      "revId": "49ad813359ac7f73879c86df928de11e9bda2117",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8b8ed5af_79aa4017",
+        "filename": "overlay/packages/apps/Gallery2/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1000026
+      },
+      "writtenOn": "2013-12-01T11:38:50Z",
+      "side": 1,
+      "message": "this must be done in the Camera2 overlay in 4.4",
+      "revId": "49ad813359ac7f73879c86df928de11e9bda2117",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8b8ed5af_59ad842c",
+        "filename": "overlay/packages/apps/Gallery2/res/values/config.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1000026
+      },
+      "writtenOn": "2013-12-01T11:38:50Z",
+      "side": 1,
+      "message": "we dont suppport this at the moment",
+      "revId": "49ad813359ac7f73879c86df928de11e9bda2117",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
+    }
+  ]
+}
