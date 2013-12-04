@@ -33,7 +33,8 @@ if [ -f ../$DEVICE/device-proprietary-files.txt ]; then
     else
       cp $SRC/system/$FILE $BASE/$FILE
     fi
-
+  done
+fi
 
 for FILE in `egrep -v '(^#|^$)' ../m7-common/proprietary-files.txt`; do
   echo "Extracting /system/$FILE ..."
