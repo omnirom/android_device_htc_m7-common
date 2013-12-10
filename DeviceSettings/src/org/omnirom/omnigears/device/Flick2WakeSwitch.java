@@ -1,4 +1,4 @@
-package com.cyanogenmod.settings.device;
+package org.omnirom.omnigears.device;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -7,16 +7,16 @@ import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.PreferenceManager;
 import java.io.File;
 
-public class Flick2SleepSwitch implements OnPreferenceChangeListener {
+public class Flick2WakeSwitch implements OnPreferenceChangeListener {
 
-    private static final String FILE = "/sys/devices/virtual/htc_g_sensor/g_sensor/flick2sleep";
+    private static final String FILE = "/sys/devices/virtual/htc_g_sensor/g_sensor/flick2wake";
 
     public static boolean isSupported() {
         return Utils.fileExists(FILE);
     }
 
     /**
-     * Restore Flick2Sleep setting from SharedPreferences. (Write to kernel.)
+     * Restore Flick2Wake setting from SharedPreferences. (Write to kernel.)
      * @param context       The context to read the SharedPreferences from
      */
     public static void restore(Context context) {
@@ -25,7 +25,7 @@ public class Flick2SleepSwitch implements OnPreferenceChangeListener {
         }
 
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
-        boolean enabled = sharedPrefs.getBoolean(SensorsFragmentActivity.KEY_FLICK2SLEEP_SWITCH, false);
+        boolean enabled = sharedPrefs.getBoolean(SensorsFragmentActivity.KEY_FLICK2WAKE_SWITCH, false);
 
         File blFile = new File(FILE);
         if(enabled) {
