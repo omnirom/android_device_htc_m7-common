@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.cyanogenmod.settings.device;
+package org.omnirom.omnigears.device;
 
 import android.app.ActionBar;
 import android.app.ActionBar.Tab;

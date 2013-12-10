@@ -1,4 +1,4 @@
-package com.cyanogenmod.settings.device;
+package org.omnirom.omnigears.device;
 
 import android.content.Context;
 import android.content.SharedPreferences;
