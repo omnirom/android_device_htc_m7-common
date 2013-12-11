@@ -180,6 +180,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=480 \
     persist.timed.enable=true \
     persist.gps.qmienabled=true \
+    persist.audio.handset.mic=analog \
     ro.baseband.arch=mdm \
     ro.cam.hw.version=m7 \
     ro.opengles.version=196608 \
