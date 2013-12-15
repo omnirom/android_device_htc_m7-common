@@ -140,10 +140,13 @@ PRODUCT_PACKAGES += \
     Tag \
     com.android.nfc_extras
 
+#OmniTorch
+PRODUCT_PACKAGES += \
+    OmniTorch
+
 # Misc Packages
 PRODUCT_PACKAGES += \
-    DeviceSettings \
-    Torch
+    DeviceSettings
 
 # Prepatch to fix BT/WiFi bus lockups
 PRODUCT_COPY_FILES += \
