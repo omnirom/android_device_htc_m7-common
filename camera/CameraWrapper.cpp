@@ -153,8 +153,8 @@ static char *camera_fixup_getparams(int id, const char *settings)
                 android::CameraParameters::SCENE_MODE_HDR);
     }
 
+    /* Set sensor parameters */
     if (id == 0) {
-        /* Set sensor parameters */
         params.set(android::CameraParameters::KEY_FOCAL_LENGTH, "3.82");
         params.set(android::CameraParameters::KEY_HORIZONTAL_VIEW_ANGLE, "69.6");
         params.set(android::CameraParameters::KEY_VERTICAL_VIEW_ANGLE, "43.0");
@@ -164,6 +164,9 @@ static char *camera_fixup_getparams(int id, const char *settings)
             params.set(android::CameraParameters::KEY_SUPPORTED_SCENE_MODES,
                     "off,auto,action,portrait,landscape,night,night-portrait,theatre,beach,snow,sunset,steadyphoto,fireworks,sports,party,candlelight,backlight,flowers,AR,text,hdr");
         }
+    }
+    if (id == 1) {
+        params.set(android::CameraParameters::KEY_FOCAL_LENGTH, "1.59");
     }
 
     ALOGV("%s: fixed parameters:", __FUNCTION__);
