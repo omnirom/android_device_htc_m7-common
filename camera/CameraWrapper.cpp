@@ -178,7 +178,6 @@ static char *camera_fixup_getparams(int id, const char *settings)
 static char *camera_fixup_setparams(int id, const char *settings)
 {
     bool isVideo = false;
-    const char *previewSize = "0x0";
     const char *sceneMode = "auto";
     const char *videoHdr = "false";
 
@@ -190,10 +189,6 @@ static char *camera_fixup_setparams(int id, const char *settings)
 
     if (params.get(android::CameraParameters::KEY_RECORDING_HINT)) {
         isVideo = !strcmp(params.get(android::CameraParameters::KEY_RECORDING_HINT), "true");
-    }
-
-    if (params.get(android::CameraParameters::KEY_PREVIEW_SIZE)) {
-        previewSize = params.get(android::CameraParameters::KEY_PREVIEW_SIZE);
     }
 
     if (params.get(android::CameraParameters::KEY_SCENE_MODE)) {
@@ -240,13 +235,7 @@ static char *camera_fixup_setparams(int id, const char *settings)
         }
     }
 
-    /* Fix 1080p video snapshot size */
-    if (isVideo) {
-        if (!strcmp(previewSize, "1920x1088")) {
-            params.set(android::CameraParameters::KEY_PICTURE_SIZE, "1920x1088");
-        }
-    }
-
+#if !LOG_NDEBUG
     ALOGV("%s: fixed parameters:", __FUNCTION__);
     params.dump();
 
