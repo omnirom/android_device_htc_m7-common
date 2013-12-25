@@ -240,13 +240,12 @@ static char *camera_fixup_setparams(int id, const char *settings)
         }
     }
 
-    /* Fix 1080p video snapshot size */
-    if (isVideo) {
-        if (!strcmp(previewSize, "1920x1088")) {
-            params.set(android::CameraParameters::KEY_PICTURE_SIZE, "1920x1088");
-        }
+    if (isVideo && id == 1) {
+        /* Front camera only supports infinity */
+        params.set(android::CameraParameters::KEY_FOCUS_MODE, "infinity");
     }
 
+#if !LOG_NDEBUG
     ALOGV("%s: fixed parameters:", __FUNCTION__);
     params.dump();
 
