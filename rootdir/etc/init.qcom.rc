@@ -392,7 +392,7 @@ on boot
 
     # Torch
     chown system system /sys/class/leds/flashlight/brightness
-    chmod 0666 /sys/class/leds/flashlight/brightness
+    chmod 0660 /sys/class/leds/flashlight/brightness
 
     # disable L27 S3 static pull down disable
     write /sys/kernel/debug/pm8921-dbg/addr 0x0E3
