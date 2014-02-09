@@ -30,7 +30,7 @@ if [ -f ../$DEVICE/device-proprietary-files.txt ]; then
     COUNT=`expr $COUNT - 1`
     echo "        $OUTDIR/proprietary/$FILE:/system/$FILE$LINEEND" >> $MAKEFILE
   done
-
+fi
 
 LINEEND=" \\"
 COUNT=`wc -l ../m7-common/proprietary-files.txt | awk {'print $1'}`
