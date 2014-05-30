@@ -15,9 +15,27 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string-array name="wake_method_entries">
-        <item></item>
+        <item>Aucun</item>
         <item>Bouton Accueil</item>
         <item>Bouton HTC</item>
         <item>Balayages des boutons</item>
+        <item>Double appui pour réveiller</item>
+    </string-array>
+    <string-array name="pocketdetection_entries">
+        <item>Aucun</item>
+        <item>Sombre</item>
+        <item>Vêtements légers</item>
+    </string-array>
+    <string-array name="f2w_sensitivity_entries">
+        <item>Moins sensible</item>
+        <item>Plue sensible</item>
+    </string-array>
+    <string-array name="f2s_time_out_entries">
+        <item>0,5 seconde</item>
+        <item>1 seconde</item>
+        <item>2 secondes</item>
+        <item>3 secondes</item>
+        <item>4 secondes</item>
+        <item>5 secondes</item>
     </string-array>
 </resources>
