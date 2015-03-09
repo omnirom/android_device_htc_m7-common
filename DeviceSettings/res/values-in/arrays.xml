@@ -16,27 +16,27 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string-array name="wake_method_entries">
-    <item>无</item>
-    <item>Home 键</item>
-    <item>标志键</item>
-    <item>滑过所有按键</item>
-    <item>双击唤醒</item>
+    <item>Tidak ada</item>
+    <item>Tombol Home</item>
+    <item>Tombol logo</item>
+    <item>Menyapu tombol</item>
+    <item>Double tap untuk bangun</item>
   </string-array>
   <string-array name="pocketdetection_entries">
-    <item>无</item>
-    <item>灰暗</item>
-    <item>薄衣服</item>
+    <item>Tidak ada</item>
+    <item>Gelap</item>
+    <item>Pakaian terang</item>
   </string-array>
   <string-array name="f2w_sensitivity_entries">
-    <item>降低敏感度</item>
-    <item>增加敏感度</item>
+    <item>Kurang sensitif</item>
+    <item>Lebih sensitif</item>
   </string-array>
   <string-array name="f2s_time_out_entries">
-    <item>半秒</item>
-    <item>1 秒</item>
-    <item>2 秒</item>
-    <item>3 秒</item>
-    <item>4 秒</item>
-    <item>5 秒</item>
+    <item>Setengah detik</item>
+    <item>1 detik</item>
+    <item>2 detik</item>
+    <item>3 detik</item>
+    <item>4 detik</item>
+    <item>5 detik</item>
   </string-array>
 </resources>
